@@ -4,11 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
-import FirstComponent from './components/firstComponent';
 
 ReactDOM.render(
   <React.StrictMode>
-    <FirstComponent />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
