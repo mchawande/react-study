@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 
 class FirstComponent extends Component {
 
-    isVisible;
-
     constructor(props) {
         super(props);
         this.state = { isVisible: true };
@@ -17,7 +15,7 @@ class FirstComponent extends Component {
 
     render() {
         return (
-            <div class="m-3 col-md-4 d-inline-block align-top">
+            <div className="m-3 col-md-4 d-inline-block align-top">
                 <button className="btn btn-light mb-3" onClick={this.toggleVisibility}>
                     Toggle { this.props.title } Component
                     </button>
@@ -27,8 +25,8 @@ class FirstComponent extends Component {
     }
 
     cardHtml() {
-        return <div class="card">
-                    <div class="card-body">
+        return <div className="card">
+                    <div className="card-body">
                         Hello { this.props.title ? this.props.title : 'Component HTML' }
                     </div>
                 </div>;
